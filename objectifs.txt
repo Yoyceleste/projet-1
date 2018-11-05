@@ -1,0 +1,24 @@
+Objectif projet 1 :
+
+- intégrer la maquette
+- apporter des modifications :
+	- responsive
+	- texte de présentation (plus d'info)
+-Héberger le site
+
+- utiliser la balise img pour intégrer toute les images directement sur le code HTML
+- Respecter le plus possible identiquement de la maquette
+- Pour les onglets accueil services porfolio et contact se font directement avec les système d'ancres (href)
+(il est possible de faire ca en css aussi par la balise radio avec l'attribut check)
+- taper l'adresse du formulaire de la map dans google map, allez sur partage > intégrer une map et copier le clan
+- utiliser balise nav pour le bandeau
+- utiliser balise i pour les icones
+- on peut utiliser l'herbergeur souhaité
+- ne pas oublié les rond autour des icones et des rond bleues
+- utilisé les balise figure dans "nos projet" pour le survol des info
+
+utiliser : 
+ - em pour balise inline (h2,p,..)
+ - rem pour balise block (section, nav, header, div,...)
+ - font size en px
+ - image en %
