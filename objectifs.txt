@@ -1,24 +1,48 @@
-Objectif projet 1 :
+﻿Objectif projet 1 :
 
-- int�grer la maquette
+- int�grer la maquette
 - apporter des modifications :
 	- responsive
-	- texte de pr�sentation (plus d'info)
--H�berger le site
+	- texte de pr�sentation (plus d'info)
+-H�berger le site
 
-- utiliser la balise img pour int�grer toute les images directement sur le code HTML
+- utiliser la balise img pour int�grer toute les images directement sur le code HTML
 - Respecter le plus possible identiquement de la maquette
-- Pour les onglets accueil services porfolio et contact se font directement avec les syst�me d'ancres (href)
+- Pour les onglets accueil services porfolio et contact se font directement avec les syst�me d'ancres (href)
 (il est possible de faire ca en css aussi par la balise radio avec l'attribut check)
-- taper l'adresse du formulaire de la map dans google map, allez sur partage > int�grer une map et copier le clan
+- taper l'adresse du formulaire de la map dans google map, allez sur partage > int�grer une map et copier le clan
 - utiliser balise nav pour le bandeau
 - utiliser balise i pour les icones
-- on peut utiliser l'herbergeur souhait�
-- ne pas oubli� les rond autour des icones et des rond bleues
-- utilis� les balise figure dans "nos projet" pour le survol des info
+- on peut utiliser l'herbergeur souhait�
+- ne pas oubli� les rond autour des icones et des rond bleues
+- utilis� les balise figure dans "nos projet" pour le survol des info
 
 utiliser : 
  - em pour balise inline (h2,p,..)
  - rem pour balise block (section, nav, header, div,...)
  - font size en px
  - image en %
+ - Ne jamais utiliser les balises sémentiques directement tj mettre une classe ou un id
+ 
+A faire :
+ - Modifier l'arboresence et mettre la même convention jusqu'au fichier en personne
+ - Réorganiser la convention dans le css
+ - Faire fonctionner les fleches
+ - Animer le carousel avec radio et la progress bar
+ - Definir une seconde classe au section pour donner les propriété de #section au seconde classe de toute les sections
+ - Faire figure / figcaption pour le portfolio
+ - Pour rendre l'oeil dynamique gerer ça avec un href dans un nouvelle onglet
+ - demander a alex si toute les balise avec des propriété directement comme h1.h2 doivent être en haut ou en bas ou laisser dans 
+   le code tel quel
+ - Voir avec mentor pour les codes couleurs
+ - la fleche du nav de nos projet doit etre au centre de tout les éléments et non décalé, elle doit être gérer avec un box shadow aussi
+ - Mettre en un peu plus gras la première ligne du hover sur les img du portfolios
+
+ - Mettre les animations
+ - Enlever les bordures
+ - Mettre les typologies
+ - Mettre la progress bar a 15%
+ - Validation W3C
+ - Mettre le code au clair et bien
+ - Faire le responsive
+ - Repartir du debut de la maquette et vérifier point par point si tout est bien
