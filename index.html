@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>WEBAGENCY</title>
 </head>
 
-<body>
+<body id="body">
   <header class="entete">
     <div class="logo">
       <img src="webagency_images/images/logo.png" alt="Logo de la société WEBAGENCY" />
@@ -17,7 +18,7 @@
     <div class="navigation">
       <nav class="menu-header">
         <ul>
-          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#body">Accueil</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#nos-projet">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -27,50 +28,40 @@
   </header>
 
   <section id="accueil" class="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item item-1">
-        <img class="carousel-img" src="webagency_images/images/slider/bg1.jpg" alt="Image d'en-tête1">
-      </div>
-      <div class="carousel-item item-2">
-        <img class="carousel-img" src="webagency_images/images/slider/bg2.jpg" alt="Image d'en-tête2">
-      </div>
-      <div class="carousel-container-text">
-        <div class="carousel-text-1">
-          <h1><span class="carousel-text-1-blue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
-        </div>
-        <div class="carousel-text-2">
-          <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-        </div>
-        <br />
-        <div class="carousel-text-3">
-          <a href="#services">Plus d'infos</a>
-          <div class="carousel-text-3-infobulle">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id risus a eros aliquet viverra ac vitae
-              diam. Quisque aliquet consequat arcu, quis fringilla enim vulputate a. Nullam porttitor eros non congue
-              interdum. Sed tincidunt placerat libero eget pulvinar. Donec posuere sagittis feugiat. Donec erat velit,
-              rutrum sed auctor sed, ullamcorper sed orci. Suspendisse viverra vel odio vitae elementum. Pellentesque
-              tincidunt nunc sed elit fermentum blandit. Fusce sit amet nunc finibus, lobortis tellus a, tristique
-              tortor. Nulla a erat non est iaculis bibendum. Phasellus pharetra ac metus eget interdum. Aenean sit amet
-              volutpat tellus. Pellentesque eget nulla purus. Ut aliquet iaculis purus non iaculis. </p>
+
+
+    <div class="carousel-container">
+      <input type="radio" id="left" name="slide" checked /><label for="left" class="lbl-l"><i
+          class="fas fa-angle-left fa-2x fleche-left"></i></label>
+      <input type="radio" id="right" name="slide" /><label for="right" class="lbl-r"><i
+          class="fas fa-angle-right fa-2x fleche-right"></i></label>
+
+      <div class="slider">
+        <div class="carousel-container-text">
+          <div class="carousel-text-1">
+            <h1><span class="carousel-text-1-blue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+          </div>
+          <div class="carousel-text-2">
+            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+          </div>
+          <br />
+          <div class="carousel-text-3">
+            <a href="#services">Plus d'infos</a>
           </div>
         </div>
+        <figure class="slide left"><img class="carousel-img left" src="webagency_images/images/slider/bg1.jpg"
+            alt="Image d'en-tête1"></figure>
+        <figure class="slide right"><img class="carousel-img right" src="webagency_images/images/slider/bg2.jpg"
+            alt="Image d'en-tête1"></figure>
       </div>
-      <div class="arrow">
-        <div class="arrow-left">
-          <a class="carousel-control-prev" href="#carousel" role="button">
-            <span class="carousel-control-prev-icon"><i class="fas fa-angle-left"></i></span>
-          </a>
-        </div>
-        <div class="arrow-right">
-          <a class="carousel-control-next" href="#carousel" role="button">
-            <span class="carousel-control-next-icon"><i class="fas fa-angle-right"></i></span>
-          </a>
-        </div>
+
+
+      <div class="progress-bar">
+        <p><progress id="bluebar" value="15" max="100"></progress></p>
       </div>
     </div>
-    <div class="progress-bar">
-      <p><progress id="bluebar" value="15" max="100"></progress></p>
-    </div>
+
+
   </section>
 
 
@@ -78,10 +69,8 @@
     <h2>NOS SERVICES</h2>
     <hr>
     <div class="sous-titre-h2">
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id risus a eros aliquet viverra ac vitae diam.
-      Quisque aliquet consequat arcu, quis fringilla enim vulputate a.Nullam porttitor eros non congue interdum.Sed
-      tincidunt placerat libero eget pulvinar. Donec posuere sagittis feugiat.</p>
-    </div>  
+      <p>Retrouvez l'ensemble des services que propose la WebAgency</p>
+    </div>
     <div class="services-container">
       <div class="side-left">
         <img src="webagency_images/images/main-feature.png" alt="Image caractérisque principale">
@@ -93,8 +82,8 @@
           </div>
           <div class="information-content">
             <h3>UX Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id risus a eros aliquet viverra ac vitae
-              diam. Quisque aliquet consequat arcu, quis fringilla enim vulputate a.</p>
+            <p>Nous répondrons à tous vos critères pour vous fournir une expérience utilisateur plus riche et plaire à
+              vos attentes.</p>
           </div>
         </div>
         <div class="information-side-right">
@@ -103,8 +92,8 @@
           </div>
           <div class="information-content">
             <h3>UI Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id risus a eros aliquet viverra ac vitae
-              diam. Quisque aliquet consequat arcu, quis fringilla enim vulputate a.</p>
+            <p>Nous sommes en charge d’améliorer votre interface utilisateur afin de rendre la navigation de votre site
+              plus facile et intuitive.</p>
           </div>
         </div>
         <div class="information-side-right">
@@ -113,8 +102,8 @@
           </div>
           <div class="information-content">
             <h3>SEO</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id risus a eros aliquet viverra ac vitae
-              diam. Quisque aliquet consequat arcu, quis fringilla enim vulputate a.</p>
+            <p>Nous ajusterons le contenu de vos projets web pour optimiser les moteurs de recherche. Nous allons
+              augmenter la qualité, la compréhension, mais surtout la visibilité de vos sites internet.</p>
           </div>
         </div>
       </div>
@@ -122,79 +111,91 @@
   </section>
 
   <section id="nos-projet">
-      <h2>NOS PROJET</h2>
-      <hr>
-      <div class="sous-titre-h2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id risus a eros aliquet viverra ac vitae diam.
-          Quisque aliquet consequat arcu, quis fringilla enim vulputate a.Nullam porttitor eros non congue interdum.Sed
-          tincidunt placerat libero eget pulvinar. Donec posuere sagittis feugiat.</p>
-      </div>
-      <div class="container">
-          <input  type="radio" id="all" name="projet" checked/><label class="lbl-1" for="all">All</label><i class="fas fa-caret-down fleche all fa-2x "></i></li>
-          <input  type="radio" id="creative" name="projet" /><label class="lbl-2" for="creative">Creative</label><i class="fas fa-caret-down fleche creative fa-2x "></i></li>
-          <input  type="radio" id="corporate" name="projet" /><label class="lbl-3" for="corporate">Corporate</label><i class="fas fa-caret-down fleche corporate fa-2x "></i></li>
-          <input  type="radio" id="portfolio" name="projet" /><label class="lbl-4" for="portfolio">Portfolio</label><i class="fas fa-caret-down fleche portfolio fa-2x "></i></li>
+    <h2>NOS PROJET</h2>
+    <hr>
+    <div class="sous-titre-h2">
+      <p>Découvrez les réalisations de la WebAgency</p>
+    </div>
+    <div class="container">
+      <input type="radio" id="all" name="projet" checked /><label class="lbl-1" for="all">All</label><i
+        class="fas fa-caret-down fleche all fa-2x "></i>
+      <input type="radio" id="creative" name="projet" /><label class="lbl-2" for="creative">Creative</label><i
+        class="fas fa-caret-down fleche creative fa-2x "></i>
+      <input type="radio" id="corporate" name="projet" /><label class="lbl-3" for="corporate">Corporate</label><i
+        class="fas fa-caret-down fleche corporate fa-2x "></i>
+      <input type="radio" id="portfolio" name="projet" /><label class="lbl-4" for="portfolio">Portfolio</label><i
+        class="fas fa-caret-down fleche portfolio fa-2x "></i>
 
       <div class="portfolio-container">
         <figure class="img-item creative">
-          <img src="webagency_images/images/portfolio/01.jpg" alt="" />
-          <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 1</span><br />Lorem ipsum dolor sit amet
-            <div class="img-item-eye"><i class="far fa-eye"></i></div>
+          <img id="portfolio01" src="webagency_images/images/portfolio/01.jpg" alt="Création d'un site
+          vitrine" />
+          <figcaption class="img-item__texthover"><span class="h4">Lunettes Agency</span><br />Création d'un site
+            vitrine
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/01.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
           </figcaption>
         </figure>
         <figure class="img-item creative">
-          <img src="webagency_images/images/portfolio/02.jpg" alt="" />
-          <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 2</span><br />Lorem ipsum dolor sit amet
-            <div class="img-item-eye"><i class="far fa-eye"></i></div>
+          <img src="webagency_images/images/portfolio/02.jpg" alt="Optimisation SEO" />
+          <figcaption class="img-item__texthover"><span class="h4">Rabbit</span><br />Optimisation SEO
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/02.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
           </figcaption>
         </figure>
         <figure class="img-item corporate">
-          <img src="webagency_images/images/portfolio/03.jpg" alt="" />
-          <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 3</span><br />Lorem ipsum dolor sit amet
-            <div class="img-item-eye"><i class="far fa-eye"></i></div>
+          <img src="webagency_images/images/portfolio/03.jpg" alt="Refonte de l'UX" />
+          <figcaption class="img-item__texthover"><span class="h4">Original Pompadour</span><br />Refonte de l'UX
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/03.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
           </figcaption>
         </figure>
         <figure class="img-item portfolio">
-          <img src="webagency_images/images/portfolio/04.jpg" alt="" />
-          <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 4</span><br />Lorem ipsum dolor sit amet
-            <div class="img-item-eye"><i class="far fa-eye"></i></div>
+          <img src="webagency_images/images/portfolio/04.jpg" alt="Création de maquettes graphiques" />
+          <figcaption class="img-item__texthover"><span class="h4">Sketch</span><br />Création de maquettes graphiques
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/04.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
           </figcaption>
         </figure>
         <figure class="img-item portfolio">
-          <img src="webagency_images/images/portfolio/05.jpg" alt="" />
-          <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 5</span><br />Lorem ipsum dolor sit amet
-            <div class="img-item-eye"><i class="far fa-eye"></i></div>
+          <img src="webagency_images/images/portfolio/05.jpg" alt="Développement d'un site e-commerce" />
+          <figcaption class="img-item__texthover"><span class="h4">Shopping</span><br />Développement d'un site
+            e-commerce
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/05.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
           </figcaption>
         </figure>
         <figure class="img-item corporate">
-            <img src="webagency_images/images/portfolio/06.jpg" alt="" />
-            <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 6</span><br />Lorem ipsum dolor sit amet
-              <div class="img-item-eye"><i class="far fa-eye"></i></div>
-            </figcaption>
+          <img src="webagency_images/images/portfolio/06.jpg" alt="Conception d'un site de voyage" />
+          <figcaption class="img-item__texthover"><span class="h4">Travel tower</span><br />Conception d'un site de
+            voyage
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/06.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
+          </figcaption>
         </figure>
         <figure class="img-item creative">
-          <img src="webagency_images/images/portfolio/07.jpg" alt="" />
-          <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 7</span><br />Lorem ipsum dolor sit amet
-            <div class="img-item-eye"><i class="far fa-eye"></i></div>
+          <img src="webagency_images/images/portfolio/07.jpg" alt="Elaboration d'un logo" />
+          <figcaption class="img-item__texthover"><span class="h4">Artist paint</span><br />Elaboration d'un logo
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/07.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
           </figcaption>
         </figure>
         <figure class="img-item portfolio">
-          <img src="webagency_images/images/portfolio/08.jpg" alt="" />
-          <figcaption class="img-item__texthover"><span class="h4">Portfolio Item 8</span><br />Lorem ipsum dolor sit amet
-            <div class="img-item-eye"><i class="far fa-eye"></i></div>
+          <img src="webagency_images/images/portfolio/08.jpg" alt="Design de la partie UI" />
+          <figcaption class="img-item__texthover"><span class="h4">Works</span><br />Design de la partie UI
+            <div class="img-item-eye"><a href="webagency_images/images/portfolio/08.jpg" target="_blank"><i
+                  class="far fa-eye"></i></a></div>
           </figcaption>
         </figure>
       </div>
-     </div>
-          
-
-
-      
+    </div>
   </section>
 
   <section id="contact">
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221424608048!2d2.347637015918134!3d48.87305530762771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1442c049bb%3A0x30a290491097f07f!2sWebAgency+SAS!5e0!3m2!1sfr!2sfr!4v1545128520616"  allowfullscreen></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221424608048!2d2.347637015918134!3d48.87305530762771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1442c049bb%3A0x30a290491097f07f!2sWebAgency+SAS!5e0!3m2!1sfr!2sfr!4v1545128520616"
+        allowfullscreen></iframe>
     </div>
     <div class="formulaire">
       <form class="contact-form" action="traitement.php">
@@ -205,14 +206,14 @@
             <p>25 Rue d'Hauteville 75010 Paris</p>
             <p><abbr title="">Tel :</abbr> 01 02 03 04 05</p>
           </address>
-          <label for="Name"></label> 
-          <input class="form-input" id="Name" type="text"  maxlength="40" placeholder="Name"/>
+          <label for="Name"></label>
+          <input class="form-input" id="Name" type="text" maxlength="40" placeholder="Name" />
           <label for="Email"></label>
-          <input class="form-input" id="Email" type="email" maxlength="40" placeholder="Email"/>
+          <input class="form-input" id="Email" type="email" maxlength="40" placeholder="Email" />
           <label for="Subject"></label>
-          <input class="form-input" id="Subject" type="text" maxlength="40" placeholder="Subject"/>
-          <textarea class="form-input" placeholder="Message" name="message"  rows="8"></textarea>
-          <input class="form-input button" type="submit" value="Send Message"/>
+          <input class="form-input" id="Subject" type="text" maxlength="40" placeholder="Subject" />
+          <textarea class="form-input" placeholder="Message" name="message" rows="8"></textarea>
+          <input class="form-input button" type="submit" value="Send Message" />
         </fieldset>
       </form>
     </div>
